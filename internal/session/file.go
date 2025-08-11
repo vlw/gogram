@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	aes "github.com/amarnathcjd/gogram/internal/aes_ige"
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
 	"github.com/pkg/errors"
+	aes "github.com/vlw/gogram/internal/aes_ige"
+	"github.com/vlw/gogram/internal/encoding/tl"
 )
 
 const defaultAESKey = "1234567890123456"

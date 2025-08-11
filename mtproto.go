@@ -20,14 +20,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/mode"
-	"github.com/amarnathcjd/gogram/internal/mtproto/messages"
-	"github.com/amarnathcjd/gogram/internal/mtproto/objects"
-	"github.com/amarnathcjd/gogram/internal/session"
-	"github.com/amarnathcjd/gogram/internal/transport"
-	"github.com/amarnathcjd/gogram/internal/utils"
 	"github.com/pkg/errors"
+	"github.com/vlw/gogram/internal/encoding/tl"
+	"github.com/vlw/gogram/internal/mode"
+	"github.com/vlw/gogram/internal/mtproto/messages"
+	"github.com/vlw/gogram/internal/mtproto/objects"
+	"github.com/vlw/gogram/internal/session"
+	"github.com/vlw/gogram/internal/transport"
+	"github.com/vlw/gogram/internal/utils"
 )
 
 const (

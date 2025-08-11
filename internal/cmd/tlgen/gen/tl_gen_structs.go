@@ -8,7 +8,7 @@ import (
 	"github.com/dave/jennifer/jen"
 	"github.com/k0kubun/pp"
 
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/tlparser"
+	"github.com/vlw/gogram/internal/cmd/tlgen/tlparser"
 )
 
 func (g *Generator) generateSpecificStructs(f *jen.File, d bool) {
