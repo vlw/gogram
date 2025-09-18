@@ -55,7 +55,9 @@ func (wp *WorkerPool) Next() *ExSender {
 	if !next.MTProto.IsTcpActive() {
 		next.MTProto.Reconnect(false)
 	}
+	next.lastUsedMu.Lock()
 	next.lastUsed = time.Now()
+	next.lastUsedMu.Unlock()
 	return next
 }
 
