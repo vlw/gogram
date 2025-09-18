@@ -694,7 +694,7 @@ func getUndoneParts(doneMap *sync.Map, totalParts int) []int {
 
 func initializeWorkers(numWorkers int, dc int32, c *Client, w *WorkerPool) error {
 	if numWorkers == 1 && dc == int32(c.GetDC()) {
-		w.AddWorker(&ExSender{c.MTProto, time.Now()})
+		w.AddWorker(NewExSender(c.MTProto))
 		return nil
 	}
 
@@ -739,7 +739,7 @@ func initializeWorkers(numWorkers int, dc int32, c *Client, w *WorkerPool) error
 		for i := numCreate; i < numWorkers; i++ {
 			conn, err := c.CreateExportedSender(int(dc), false, authParams)
 			if conn != nil && err == nil {
-				sender := &ExSender{conn, time.Now()}
+				sender := NewExSender(conn)
 				c.exSenders.senders[int(dc)] = append(c.exSenders.senders[int(dc)], sender)
 				w.AddWorker(sender)
 			}

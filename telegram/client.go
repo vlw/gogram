@@ -442,6 +442,13 @@ type ExSender struct {
 	lastUsedMu sync.Mutex
 }
 
+func NewExSender(mtProto *mtproto.MTProto) *ExSender {
+	return &ExSender{
+		MTProto:  mtProto,
+		lastUsed: time.Now(),
+	}
+}
+
 func (es *ExSender) GetLastUsedTime() time.Time {
 	es.lastUsedMu.Lock()
 	defer es.lastUsedMu.Unlock()
