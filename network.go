@@ -9,12 +9,12 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/mtproto/messages"
-	"github.com/amarnathcjd/gogram/internal/mtproto/objects"
-	"github.com/amarnathcjd/gogram/internal/session"
-	"github.com/amarnathcjd/gogram/internal/utils"
 	"github.com/pkg/errors"
+	"github.com/vlw/gogram/internal/encoding/tl"
+	"github.com/vlw/gogram/internal/mtproto/messages"
+	"github.com/vlw/gogram/internal/mtproto/objects"
+	"github.com/vlw/gogram/internal/session"
+	"github.com/vlw/gogram/internal/utils"
 )
 
 func (m *MTProto) sendPacket(request tl.Object, expectedTypes ...reflect.Type) (chan tl.Object, int64, error) {

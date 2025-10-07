@@ -5,7 +5,7 @@ package examples
 import (
 	"fmt"
 
-	tg "github.com/amarnathcjd/gogram/telegram"
+	tg "github.com/vlw/gogram/telegram"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package telegram
 import (
 	"regexp"
 
-	"github.com/amarnathcjd/gogram/internal/utils"
+	"github.com/vlw/gogram/internal/utils"
 )
 
 const (

@@ -9,10 +9,10 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	ige "github.com/amarnathcjd/gogram/internal/aes_ige"
-	"github.com/amarnathcjd/gogram/internal/encoding/tl"
-	"github.com/amarnathcjd/gogram/internal/utils"
 	"github.com/pkg/errors"
+	ige "github.com/vlw/gogram/internal/aes_ige"
+	"github.com/vlw/gogram/internal/encoding/tl"
+	"github.com/vlw/gogram/internal/utils"
 )
 
 // Common is a message (either encrypted or unencrypted) used for communication between the client and server.

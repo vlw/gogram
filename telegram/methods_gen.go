@@ -4,9 +4,10 @@ package telegram
 
 import (
 	"fmt"
-	tl "github.com/amarnathcjd/gogram/internal/encoding/tl"
-	errors "github.com/pkg/errors"
 	"reflect"
+
+	errors "github.com/pkg/errors"
+	tl "github.com/vlw/gogram/internal/encoding/tl"
 )
 
 type AccountAcceptAuthorizationParams struct {

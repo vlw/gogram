@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/amarnathcjd/gogram"
 	"github.com/pkg/errors"
+	"github.com/vlw/gogram"
 )
 
 type SendOptions struct {

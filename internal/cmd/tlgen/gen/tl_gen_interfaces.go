@@ -4,8 +4,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/amarnathcjd/gogram/internal/cmd/tlgen/tlparser"
 	"github.com/dave/jennifer/jen"
+	"github.com/vlw/gogram/internal/cmd/tlgen/tlparser"
 )
 
 func (g *Generator) generateInterfaces(f *jen.File, d bool) {
