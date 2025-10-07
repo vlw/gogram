@@ -15,9 +15,9 @@ import (
 	"strconv"
 	"strings"
 
-	ige "github.com/amarnathcjd/gogram/internal/aes_ige"
-	"github.com/amarnathcjd/gogram/internal/utils"
 	"github.com/pkg/errors"
+	ige "github.com/vlw/gogram/internal/aes_ige"
+	"github.com/vlw/gogram/internal/utils"
 )
 
 func FileExists(path string) bool {

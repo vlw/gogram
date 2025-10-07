@@ -13,8 +13,8 @@ import (
 
 	"slices"
 
-	"github.com/amarnathcjd/gogram/internal/utils"
 	"github.com/pkg/errors"
+	"github.com/vlw/gogram/internal/utils"
 )
 
 type MessageHandler func(m *NewMessage) error

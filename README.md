@@ -51,7 +51,7 @@ go get -u github.com/amarnathcjd/gogram/telegram
 ```golang
 package main
 
-import "github.com/amarnathcjd/gogram/telegram"
+import "github.com/vlw/gogram/telegram"
 
 func main() {
 	client, err := telegram.NewClient(telegram.ClientConfig{

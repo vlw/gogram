@@ -1,7 +1,7 @@
 package examples
 
 import (
-	"github.com/amarnathcjd/gogram/telegram"
+	"github.com/vlw/gogram/telegram"
 )
 
 const (
